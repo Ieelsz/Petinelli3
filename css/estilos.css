@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* CABEÇALHO */
+.cabecalho__container {
+    background-color: rgb(16, 131, 55);
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.logo__item {
+    padding: 25px 12px;
+    width: 100px;
+}
+
+.logo__nome{
+    margin-right: auto;
+    font-size: 20px;
+    color: #fff;
+}
+
+.logo__whatsapp{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    transition: all 0.3s;
+}
+
+.logo__whatsapp:hover{
+    width: 60px;
+    height: 60px;
+}
+
+/* MENU LATERAL */
+.menu__container {
+    background-color: rgb(16, 131, 55);
+    font-size: 16px;
+}
+
+.menu__itens:hover {
+    background-color:  rgb(1, 85, 29, 0.5);
+    transition: 0.5s;
+    border-radius: 3px;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.icone__inicio::before {
+    content: url(../img/website/icon_home.png);
+}
+
+.icone__produtos::before {
+    content: url(../img/website/icon_produtos.png);
+}
+
+.icone__contato::before {
+    content: url(../img/website/icon_contato.png);
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1440px) {
+
+    /* ESTILOS DO MENU LATERAL */
+    .menu__lista {
+        border-bottom: 1.5px solid #3970BE;
+    }
+}

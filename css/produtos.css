@@ -1,0 +1,74 @@
+.catalogo__produtos{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.produtos{
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #cfcfcf;
+}
+
+.produtos__imagem{
+    width: 150px;
+    height: auto;
+    border-radius: 6px 6px 0 0;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.produtos__conteudo{
+    padding: 1rem;
+}
+
+.produtos__titulo{
+    font-size: 15px;
+    color: rgb(7, 0, 0, 0.6);
+}
+
+.produtos__descricao{
+    font-size: 11px;
+    line-height: 2.0;
+    text-align: center;
+    color: rgb(172, 169, 169);
+}
+
+.quebra__barra{
+    padding-top: 15%;
+}
+
+@media screen and (min-width:0){
+    .produtos{
+        margin-right: 1rem;
+        width: 100%;
+    }
+    .catalogo__produtos{
+        padding: 5rem 0 0 1rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .produtos{
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+    .catalogo__produtos{
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    .produtos{
+        margin-right: 5rem;
+        width: calc(25% - 5rem); /*Calcular largura das caixas*/
+    }
+    .catalogo__produtos{
+        padding: 5rem 0 0 5rem;
+        margin-left: 100px;
+    }
+}
