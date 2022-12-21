@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Petinelli Distribuidora</title>
+    <link rel="shortcut icon" href="img/website/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+	<!-- Cabecalho -->
+    <header>
+         <div class="cabecalho__container">
+            <img  class="logo__item" src="img/website/Logo.png">
+            <h1 class="logo__nome">Petinelli Distribuidora</h1>
+            <a href="https://wa.me/5543999962506" class="logo__whatsapp" target="_blank" title="Atendimento via WhatsApp"><img src="img/website/whatsapp-logo.gif" alt="Logo whatsapp contato"></a>
+         </div>
+    </header>
+
+    <!-- Menu -->
+    <aside class="menu__container">
+        <ul class="menu__lista">
+            <li>
+                <a class="menu__itens" href="index.html">
+                    <i class="icone__produtos icone-item"></i>
+                    <span>Produtos</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__itens" href="contato.html">
+                    <i class="icone__contato icone-item"></i>
+                    <span>Contato</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    
+    <!-- Container -->
+    <main>
+        <div class="rc_nav" id="centered_nav">
+            <a href="querosenes.html" title="Querosenes">Querosenes</a>
+            <a href="sodas.html" title="Sodas">Sodas</a>
+            <a href="ceras.html" title="Ceras">Ceras</a>
+            <a href="alcool.html" title="Álcool">Álcool</a>
+            <a href="amaciante.html" title="Amaciante">Amaciante</a>
+            <a href="pedra_sanitaria.html" title="Pedras Sanitaria">Pedras Sanítaria</a>
+            <a href="velas.html" title="Velas">Velas </a>
+            <a href="papel_higienico.html" title="Papel Higiênico">Papel Higiênico</a>
+            <a href="guardanapo.html" title="Guardanapo">Guardanapo</a>
+            <a href="detergente.html" title="Detergente">Detergente</a>
+            <a href="saponaceo.html" title="Saponáceo">Saponáceo</a>
+            <a href="pano_sacos.html" title="Panos e sacos">Panos e sacos</a>
+            <a href="espeto_bambu.html" title="Espeto de Bambu">Espeto de Bambu</a>
+            <a href="corda_varal.html" title="Corda de Varal">Corda de Varal</a>
+            <a href="esponjas.html" title="Esponjas">Esponjas</a>
+            <a href="vasouras.html" title="Vasouras">Vasouras</a>
+            <a href="automotivos.html" title="Produtos Automotivos">Produtos Automotivos</a>
+            <a href="embalagens.html" title="Embalagens">Embalagens</a>
+            <a href="sabonetes.html" title="Sabonetes">Sabonetes</a>
+            <a href="venenos.html" title="Venenos">Venenos</a>
+            <a href="perfurmadores.html" title="Perfurmadores">Perfurmadores</a>
+            <a href="antimofo.html" title="Antimofo">Antimofo</a>
+            <a href="tingecor_corantes.html" title="Tingecor/Corantes">Tingecor/Corantes</a>
+            <a href="escovas.html" title="Escovas">Escovas</a>
+            <a href="naftalina.html" title="Naftalina">Naftalina</a>
+            <a href="odorizador.html" title="Odorizador de Ambientes">Odorizador de Ambientes</a>
+            <a href="palha_aco.html" title="Palhas de Aço">Palhas de Aço</a>
+            <a href="multiuso.html" title="Palhas de Aço">Multiuso</a>
+            <a href="outros.html" title="Outros">Outros</a>
+            <a href="javascript:void(0);" title="Ver listas" style="font-size:20px;" class="icon" onclick="MyList()">&#9776;</a>
+        </div>
+        <a href="javascript:void(0);" title="Ver listas" onclick="MyList()" ><img class="seta" src="img/website/seta.png"></a>
+        <script>
+        function MyList() 
+        {
+            var x = document.getElementById("centered_nav");
+            if (x.className === "rc_nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "rc_nav";
+            }
+        }
+        </script>
+    </main>
+</body>
+</html>
